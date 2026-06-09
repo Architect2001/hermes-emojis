@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赫尔墨斯 · 表情包</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter','system-ui',-apple-system,sans-serif;background:#f0f2f5;color:#1f2937;line-height:1.6}
+  .wrap{max-width:960px;margin:0 auto;padding:48px 24px 64px}
+  h1{font-size:clamp(24px,4vw,36px);font-weight:700;margin-bottom:4px}
+  .sub{color:#6b7280;font-size:14px;margin-bottom:40px}
+  .sec{margin-bottom:44px}
+  .sec-title{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#6b7280;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid #dce0e6}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:14px}
+  .card{background:#fff;border:1px solid #dce0e6;border-radius:12px;padding:14px 10px;text-align:center;transition:all .2s}
+  .card:hover{border-color:#16a34a;transform:translateY(-2px);box-shadow:0 4px 12px rgba(22,163,74,.1)}
+  .card img{max-width:80px;max-height:80px;display:block;margin:0 auto}
+  .card .label{font-size:11px;color:#6b7280;margin-top:8px;font-family:'JetBrains Mono',monospace}
+  .card-wide{grid-column:span 2}
+  .card-wide img{max-width:160px;max-height:120px}
+  .card-row{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  .card-row .card{flex:0 0 auto;width:130px}
+  footer{margin-top:48px;font-family:'JetBrains Mono',monospace;font-size:11px;color:#6b7280;border-top:1px solid #dce0e6;padding-top:16px;text-align:center}
+  a{color:#16a34a}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>赫尔墨斯 · 表情包 🌿</h1>
+  <p class="sub">Hermes Emoji Pack · by <a href="https://github.com/Architect2001">111</a></p>
+
+  <!-- ====== Chibi Basic ====== -->
+  <div class="sec">
+    <div class="sec-title">🧸 Chibi Basic · 基础表情 S1</div>
+    <div class="grid" id="g1"></div>
+  </div>
+
+  <!-- ====== Chibi Action ====== -->
+  <div class="sec">
+    <div class="sec-title">🎭 Chibi Action · 动态表情 S2</div>
+    <div class="grid" id="g2"></div>
+  </div>
+
+  <!-- ====== Coder Memes ====== -->
+  <div class="sec">
+    <div class="sec-title">🤖 Coder Memes · 程序员梗图</div>
+    <div class="grid" id="g3"></div>
+  </div>
+
+  <!-- ====== Character Art ====== -->
+  <div class="sec">
+    <div class="sec-title">🖼️ Character Art · 角色设定</div>
+    <div class="grid" id="g4"></div>
+  </div>
+
+  <footer>🚀 Managed by Hermes</footer>
+</div>
+
+<script>
+// ---- 直接列出文件路径，一图对一号 ----
+const data = [
+  {
+    id: 'g1',
+    title: '基础表情',
+    prefix: 'emojis/chibi-basic/',
+    files: [
+      '开心.png', '呆滞.png', '生气.png', '炸毛.png',
+      '疑惑.png', '害羞.png', '得意.png', '撒娇.png', '无奈.png'
+    ]
+  },
+  {
+    id: 'g2',
+    title: '动态表情',
+    prefix: 'emojis/chibi-action/',
+    files: [
+      '睡觉.png', '看手机.png', '慌张.png', '思考.png',
+      '超开心.png', '心动.png', '哭哭.png', '害羞脸红.png', '调皮.png'
+    ]
+  },
+  {
+    id: 'g3',
+    title: '程序员梗图',
+    prefix: 'coder-memes/',
+    files: [
+      'DEBUG OR DIE.png', 'ERROR弹窗淹没.png', 'TAP!!狂敲键盘.png',
+      'hermes!!瘫倒.png', '哼.png', '抱抱.png',
+      '被报错缠住.png', '被需求淹没.png'
+    ]
+  },
+  {
+    id: 'g4',
+    title: '角色设定',
+    prefix: 'character/',
+    files: [
+      'hermes_3view.jpg', 'hermes_chibi_1.jpg', 'hermes_chibi_casual.jpg',
+      'hermes_chibi_lace.jpg', 'hermes_profile_1.jpg'
+    ]
+  }
+];
+
+data.forEach(section => {
+  const el = document.getElementById(section.id);
+  if (!el) return;
+  el.innerHTML = section.files.map(f => {
+    const label = f.replace(/\.\w+$/, '');
+    return '<div class="card"><img src="' + section.prefix + f + '" alt="' + label + '" loading="lazy"><div class="label">' + label + '</div></div>';
+  }).join('');
+});
+</script>
+</body>
+</html>
