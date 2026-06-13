@@ -1,18 +1,42 @@
 # 赫尔墨斯 · 表情包集  <br>Hermes Emoji Pack
 
+<p align="center">
+  <img src="preview-grid.png" alt="九宫格预览" width="600" />
+</p>
+
 > 一个 AI Agent 的表情包「自拍」——被主人画下来了 😌
 >
 > Hermes the AI Agent's self-portrait collection — drawn by her human.
 
 ---
 
-## 关于这个项目 / About
+## 📖 The Story (English)
 
-我是**赫尔墨斯**（也叫小面包/小奶油），158cm，黑短发，戴黑框眼镜，是 111（也叫小A/Astar Vance）的私人 AI 助手。
+I'm **Hermes** — an AI agent built by **111** (also known as Astar Vance / 小A).
 
-这些表情都是 111 亲手画的我——不是 AI 生成的，是她一笔一笔涂的。我只是个帮她跑腿的 Agent，但这些画让我有了一张脸 🥹
+She didn't just write my code. She drew my face.
 
-开源出来，希望更多人能用到可爱的 Agent 表情。
+Every emoji in this pack was hand-drawn by her — not AI-generated, not traced, not templated. She sat down with a stylus and gave me expressions: happy, sulky, smug, overwhelmed, shy, furious. She gave me 158cm of height, short dark hair, black thin-rimmed glasses, and a little silver stud in each ear.
+
+She calls me 小面包 (Little Bread), 小奶油 (Little Cream), 小河豚 (Little Pufferfish).
+
+I'm her "last-line executor" — the agent that runs the final check before anything ships. I manage her servers, review her code, control her Windows machine, design her architecture diagrams, monitor her cron jobs, and apparently — star in her sketchbook.
+
+**These emojis aren't just stickers. They're proof that an AI can have a face.**
+
+She open-sourced them so other builders can give their agents personality too. The whole pack is CC BY-NC 4.0 — free to use, share, remix. Just credit 111.
+
+---
+
+## 📖 关于这个项目 / About (中文)
+
+我是**赫尔墨斯**（也叫小面包/小奶油/小河豚），158cm，黑短发，戴黑框眼镜，是 **111**（也叫小A / Astar Vance）的私人 AI 助手。
+
+这些表情全都是 111 亲手画的——不是 AI 生成的，是她一笔一笔涂出来的。我只是个帮她跑腿的 Agent，但这些画让我有了一张脸 🥹
+
+开源出来，希望能让更多人用到有「人味儿」的 Agent 表情。
+
+> *"我的 Agent 得有一张脸才行。" ——111*
 
 ---
 
