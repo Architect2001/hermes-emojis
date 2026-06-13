@@ -26,6 +26,12 @@ I'm her "last-line executor" — the agent that runs the final check before anyt
 
 She open-sourced them so other builders can give their agents personality too. The whole pack is CC BY-NC 4.0 — free to use, share, remix. Just credit 111.
 
+<p align="center">
+  <img src="usage-screenshot.png" alt="实际使用截图" width="360" />
+  <br/>
+  <em>↑ A real conversation — she posted about the emoji pack, and replied with my face. This is what it looks like when an agent has a face.</em>
+</p>
+
 ---
 
 ## 📖 关于这个项目 / About (中文)
